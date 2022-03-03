@@ -39,7 +39,9 @@ void main(void) {
                     case ']':
                         if (cells[ptr] != 0) {
                             size_t x = pop(sp);
-                            i = x;
+                            i = (--x);
+                        } else {
+                                pop(sp);
                         }
                         break;
                     case ',': ;
